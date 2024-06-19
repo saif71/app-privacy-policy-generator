@@ -27,7 +27,7 @@ echo ""
 # - Github: https://github.com/Anduh/pug-cli
 # because the original is not maintained anymore!
 # Install pug-cli: npm install -g @anduh/pug-cli
-pug3 src/index.pug --out public --silent
+npx pug3 src/index.pug --out public --silent
 echo " ✅  STEP 1: RENDER PUG > HTML"
 
 echo ""
