@@ -1,13 +1,15 @@
 <template>
     <section id="step-1" v-if="wizardStep === 1">
-        <div class="max-w-5xl mx-auto bg-zinc-100 dark:bg-red-500 p-4 rounded-2xl shadow-2xl">
-            <a class="title text-red-500" href="https://github.com/nisrulz/app-privacy-policy-generator#app-privacy-policy-generator" target="_blank" rel="noopener noreferrer">
-                <p class="is-size-1">App Privacy Policy Generator</p>
+        <div class="max-w-5xl mx-auto bg-zinc-700 dark:bg-red-500 p-4 rounded-2xl text-center">
+            <img class="w-96 inline" src="images/app_graphics/side_image.svg" alt="Hero Image">
+            <a class=" text-4xl font-semibold text-lime-50" href="https://github.com/nisrulz/app-privacy-policy-generator#app-privacy-policy-generator" target="_blank" rel="noopener noreferrer">
+               <p> <span class="text-lime-300 text-4xl font-semibold">SuperSimple</span> <br> Privacy Policy Generator</p>
             </a>
-            <img class="center-block hero-image" src="images/app_graphics/side_image.svg" alt="Hero Image">
-            <p class="is-size-5 mt-2">Generate a customized Privacy Policy and Terms of Use document for your mobile apps</p>
+
+            hr.my-6
+            <p class="text-base max-w-2xl mx-auto mt-2 text-white">Generate a customized Privacy Policy and Terms of Use document that perfectly fits your mobile app. With our simple and intuitive interface, you can easily customize the policies to suit the needs of your app. Whether you're an individual or a developer, you can easily create a comprehensive privacy policy that meets the standards of your target audience.</p>
             <hr>
-            <button class="button is-primary start-btn" @click="nextStep">Start</button>
+            <button class="mt-6 bg-lime-700 text-white rounded-3xl px-6 py-3 font-bold text-lg hover:shadow-2xl hover:bg-lime-800 " @click="nextStep">Start</button>
         </div>
     </section>
 </template>
