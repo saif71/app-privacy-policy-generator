@@ -14,5 +14,8 @@
   "scripts": {
     "dev": "npx pug3 --watch src/index.pug --out public --silent",
     "build": "npx pug3 src/index.pug --out public --silent"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
   }
 }

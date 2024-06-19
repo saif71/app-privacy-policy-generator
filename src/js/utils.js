@@ -18,51 +18,50 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-function convertHtmlToMd(html) {
-  let markdown = toMarkdown(html, {
-    converters: [{
-      filter: 'div',
-      replacement: function (content) {
-        return content
-      }
-    }]
-  })
-  return markdown
+
+function convertHtmlToMarkdown(html) {
+  const converters = [{ filter: 'div', replacement: content => content }];
+  const markdown = toMarkdown(html, { converters });
+  return markdown;
 }
 
 function getRawHTML(content, title) {
-  let html =
-    "<!DOCTYPE html>\n\
-    <html>\n\
-    <head>\n\
-      <meta charset='utf-8'>\n\
-      <meta name='viewport' content='width=device-width'>\n\
-      <title>" +
-    title +
-    "</title>\n\
-      <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>\n\
-    </head>\n\
-    <body>\n\
-    " +
-    content +
-    '\n\
-    </body>\n\
-    </html>\n\
-      '
-  return html
+  const html = `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width'>
+        <title>${title}</title>
+        <style>
+          body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            padding: 1em;
+          }
+        </style>
+      </head>
+      <body>
+        ${content}
+      </body>
+    </html>
+  `;
+  return html;
 }
 
 function getContent(id) {
-  var content = document.getElementById(id)
-  return content.innerHTML
+  const contentElement = document.getElementById(id);
+  return contentElement.innerHTML;
 }
 
 function getTitle(id) {
-  var content = document.getElementById(id)
-  var title = content.getElementsByTagName('strong')[0]
-  return title.innerHTML
+  const contentElement = document.getElementById(id);
+  const titleElement = contentElement.getElementsByTagName('strong')[0];
+  return titleElement.innerHTML;
 }
 
-function loadInTextView(id, content) {
-  document.getElementById(id).value = content
+function loadContentInTextView(id, content) {
+  const textViewElement = document.getElementById(id);
+  textViewElement.value = content;
 }
+
+
