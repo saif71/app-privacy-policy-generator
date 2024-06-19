@@ -634,6 +634,10 @@ video {
   max-width: 64rem;
 }
 
+.max-w-3xl {
+  max-width: 48rem;
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -679,6 +683,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -696,6 +705,11 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -791,7 +805,7 @@ input {
   line-height: 1.25rem !important;
   font-weight: 500 !important;
   --tw-text-opacity: 1 !important;
-  color: rgb(77 124 15 / var(--tw-text-opacity)) !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .hover\:bg-lime-800:hover {

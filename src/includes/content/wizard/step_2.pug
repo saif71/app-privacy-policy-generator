@@ -1,7 +1,6 @@
 section#step-2(v-if='wizardStep==2')
-    .bg-zinc-700.max-w-5xl.mx-auto.bg-zinc-700.p-4.rounded-2xl.text-white
-        .card-content
-            p
+    .bg-zinc-700.max-w-3xl.mx-auto.bg-zinc-700.p-4.rounded-2xl.text-white
+            p.text-3xl.py-4
                 a(
                     href='#' 
                     target='_blank' 
@@ -39,26 +38,26 @@ section#step-2(v-if='wizardStep==2')
                         label.label App Name
                         .control
                             input#appName.input(
-                                v-bind:class="{ 'is-danger': (appName.length == 0) }" 
+                                v-bind:class="{ '': (appName.length == 0) }" 
                                 placeholder="Awesome App Name" 
                                 v-model="appName" 
                                 required="" 
                                 type="text"
                                 )
-                        p.help(v-bind:class="{ 'is-danger': (appName.length == 0) }" v-show="(appName.length == 0)") Application Name is required.
+                        p.help(v-bind:class="{ '': (appName.length == 0) }" v-show="(appName.length == 0)") Application Name is required.
                 br
                 .control
                     .field
                         label.label Contact Information
                         .control
                             input#appContact.input(
-                                v-bind:class="{ 'is-danger': (appContact.length == 0) }" 
+                                v-bind:class="{ '': (appContact.length == 0) }" 
                                 placeholder="Email Address" 
                                 v-model="appContact" 
                                 required="" 
                                 type="email"
                                 )
-                        p.help(v-bind:class="{ 'is-danger': (appContact.length == 0) }" v-show="(appContact.length == 0)") Email address is required.
+                        p.help(v-bind:class="{ '': (appContact.length == 0) }" v-show="(appContact.length == 0)") Email address is required.
                 br
                 .control
                     .field
@@ -80,6 +79,6 @@ section#step-2(v-if='wizardStep==2')
                                 type="text"
                                 )
                         p.help.has-text-grey Personally Identifiable Information you collect (comma separated)
-        footer.card-footer
-            a.button-secondary(@click='prevStep') Previous
-            a.button-prime(@click='nextStep') Next
+                footer.py-4
+                    a.button-secondary(@click='prevStep') Previous
+                    a.button-prime(@click='nextStep') Next Step
