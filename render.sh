@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# App Privacy Policy Generator: A simple web app to generate a generic 
+# SuperSimple Privacy Policy Generator: A simple web app to generate a generic 
 # privacy policy for your Android/iOS apps
 # 
-# Copyright 2017-Present Nishant Srivastava
+# Copyright 2017-Present STLRAxis
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -40,10 +40,10 @@ echo ""
 JS_FILE="src/js/thirdpartyservices.js"
 YAML_DIR="src/includes/yaml"
 echo "/*  
-    App Privacy Policy Generator: A simple web app to generate a generic 
+    SuperSimple Privacy Policy Generator: A simple web app to generate a generic 
     privacy policy for your Android/iOS apps
 
-    Copyright 2017-Present Nishant Srivastava
+    Copyright 2017-Present STLRAxis
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

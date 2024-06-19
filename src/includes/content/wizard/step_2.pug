@@ -1,11 +1,11 @@
-section#step-2.columns(v-if='wizardStep==2')
-    .column.card
+section#step-2(v-if='wizardStep==2')
+    .bg-zinc-700.max-w-5xl.mx-auto.bg-zinc-700.p-4.rounded-2xl.text-white
         .card-content
             p
                 a(
-                    href='https://github.com/nisrulz/app-privacy-policy-generator#app-privacy-policy-generator' 
+                    href='#' 
                     target='_blank' 
-                    rel='noopener noreferrer') App Privacy Policy Generator
+                    rel='noopener noreferrer') Step:1 App Info
             progress.progress.is-small.is-link(value='16' max='100')
             .scrollable.content
                 .control
@@ -83,5 +83,3 @@ section#step-2.columns(v-if='wizardStep==2')
         footer.card-footer
             a.card-footer-item(@click='prevStep') Previous
             a.card-footer-item(@click='nextStep') Next
-    .column.is-information.is-hidden-touch
-        img.center-block.sidebar-img(src='images/app_graphics/side_image.svg')
