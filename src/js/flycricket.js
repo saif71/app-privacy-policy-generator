@@ -4,7 +4,7 @@ function fc_deploy_simple() {
   // fill in the body with the html content
   document.getElementById('fc-body').value = getContent('privacy_simple_content')
   document.getElementById('fc-terms').value = getContent('tandc_content')
-  
+
   form.submit();
 }
 
@@ -14,7 +14,7 @@ function fc_deploy_notracking() {
   // fill in the body with the html content
   document.getElementById('fc-body').value = getContent('privacy_notrack_content')
   document.getElementById('fc-terms').value = getContent('tandc_content')
-  
+
   form.submit();
 }
 
@@ -24,6 +24,6 @@ function fc_deploy_gdpr() {
   // fill in the body with the html content
   document.getElementById('fc-body').value = getContent('privacy_gdpr_content')
   document.getElementById('fc-terms').value = getContent('tandc_content')
-  
+
   form.submit();
 }
