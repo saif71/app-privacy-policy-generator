@@ -67,7 +67,7 @@ section#step-7.columns(v-if="wizardStep==7")
                             @click="toggleDisclaimerModalVisibility"
                             ) Read the full Disclaimer here
         footer.card-footer
-            a.card-footer-item(@click='prevStep') Previous
+            a.button-secondary(@click='prevStep') Previous
             a.card-footer-item(@click='togglePrivacyModalVisibility' 
                 rel="noopener noreferrer" 
                 v-if="typeOfPolicyInt==1"

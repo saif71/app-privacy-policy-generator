@@ -52,7 +52,7 @@ section#step-4.columns(v-if="wizardStep==4")
                             )
                         |   Android, iOS & KaiOS
         footer.card-footer
-            a.card-footer-item(@click='prevStep') Previous
-            a.card-footer-item(@click='nextStep') Next
+            a.button-secondary(@click='prevStep') Previous
+            a.button-prime(@click='nextStep') Next Step
     .column.is-information.is-hidden-touch
         img.center-block.sidebar-img(src='images/app_graphics/side_image.svg')

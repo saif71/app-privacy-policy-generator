@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input{
+   @apply !w-full !bg-zinc-800 !text-white !p-4 !rounded-2xl !my-2;
+}
+.field {
+    @apply !mb-6;
+}
+.label{
+    @apply !text-base !font-semibold text-white;
+}
+.help{
+    @apply !text-xs !text-gray-300;
+}
+
+.button-prime{
+    @apply !text-white !bg-lime-700    !font-medium !rounded-2xl !text-sm !px-5 !py-2.5 !me-2 !mb-2  !mx-4;
+}
+.button-secondary{
+    @apply !text-lime-700 !border !border-lime-700    !font-medium !rounded-2xl !text-sm !px-5 !py-2.5 !me-2 !mb-2  !mx-4;
+}

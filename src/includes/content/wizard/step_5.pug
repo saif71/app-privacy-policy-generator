@@ -47,7 +47,7 @@ section#step-5.columns(v-if="wizardStep==5")
                                 type="text"
                                 )
         footer.card-footer
-            a.card-footer-item(@click='prevStep') Previous
-            a.card-footer-item(@click='nextStep') Next
+            a.button-secondary(@click='prevStep') Previous
+            a.button-prime(@click='nextStep') Next Step
     .column.is-information.is-hidden-touch
         img.center-block.sidebar-img(src='images/app_graphics/side_image.svg')
