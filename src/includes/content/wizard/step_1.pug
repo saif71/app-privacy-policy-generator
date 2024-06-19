@@ -1,8 +1,14 @@
-section#step-1(v-if='wizardStep==1')
-    .max-w-5xl.mx-auto.bg-zinc-100.p-4.rounded-2xl.shadow-2xl
-        a.title.text-red-500(href='https://github.com/nisrulz/app-privacy-policy-generator#app-privacy-policy-generator' target='_blank' rel='noopener noreferrer')
-            p.is-size-1 App Privacy Policy Generator
-        img.center-block.hero-image(src='images/app_graphics/side_image.svg')
-        p.is-size-5.mt-2 | Generate a customized Privacy Policy and Terms of Use document for your mobile apps 
-        hr
-        button.button.is-primary.start-btn(@click='nextStep') Start
+<template>
+    <section id="step-1" v-if="wizardStep === 1">
+        <div class="max-w-5xl mx-auto bg-zinc-100 p-4 rounded-2xl shadow-2xl">
+            <a class="title text-red-500" href="https://github.com/nisrulz/app-privacy-policy-generator#app-privacy-policy-generator" target="_blank" rel="noopener noreferrer">
+                <p class="is-size-1">App Privacy Policy Generator</p>
+            </a>
+            <img class="center-block hero-image" src="images/app_graphics/side_image.svg" alt="Hero Image">
+            <p class="is-size-5 mt-2">Generate a customized Privacy Policy and Terms of Use document for your mobile apps</p>
+            <hr>
+            <button class="button is-primary start-btn" @click="nextStep">Start</button>
+        </div>
+    </section>
+</template>
+
